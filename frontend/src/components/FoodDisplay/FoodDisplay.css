@@ -1,16 +1,20 @@
 .food-display {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .food-display h2 {
-    font-size: max(2vw, 24px);
-    font-weight: 600;
+  font-size: max(2vw, 24px);
+  font-weight: 600;
 }
 
 .food-display-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    margin-top: 30px;
-    gap: 30px;
-    row-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+.food-item:hover {
+    box-shadow: tomato 0px 0px 20px 1px;
 }

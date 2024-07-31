@@ -14,7 +14,6 @@ const FoodDisplay = ({ category }) => {
         {food_list.map((item, index) => {
           if (category === "All" || category === item.category) {
             return (
-
                 <FoodItem
                   key={index}
                   id={item._id}

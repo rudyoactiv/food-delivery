@@ -77,3 +77,23 @@
   width: 40px;
   cursor: pointer;
 }
+
+@media (max-width: 750px) {
+  .product-page {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+  .product-page-left {
+    margin: 0;
+  }
+  .product-page-right {
+    margin: 0;
+  }
+  .product-item-name-rating p{
+    font-size: 10vw;
+    text-align: center;
+  }
+  .product-item-counter {
+    justify-content: center;
+  }
+}
