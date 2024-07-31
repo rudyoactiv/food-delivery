@@ -7,6 +7,7 @@ import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
+import ProductPage from "./pages/ProductPage/ProductPage";
 
 const App = () => {
 
@@ -15,12 +16,13 @@ const App = () => {
   return (
     <>
     {showLogin? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
-      <div className="app">
         <Navbar setShowLogin={setShowLogin} />
+      <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
+          <Route path="/product/:id" element={<ProductPage />} />
         </Routes>
         <ScrollToTopButton />
       </div>

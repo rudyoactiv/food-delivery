@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import './Navbar.css'
 import {assets} from '../../assets/assets'
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { Link } from 'react-router-dom';
 import { StoreContext } from "../../context/storeContext";
 
@@ -10,10 +9,6 @@ const Navbar = ({setShowLogin}) => {
     const [menu, setMenu] = useState("home")
 
     const {getTotalCartAmount} = useContext(StoreContext)
-
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
 
   return (
     <div className='navbar'>
