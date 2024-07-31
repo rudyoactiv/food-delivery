@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <ExploreMenu category={category} setCategory={setCategory}/>
-      <FoodDisplay category={category}/>
-      <AppDownload />
+      <ExploreMenu id="explore-menu" category={category} setCategory={setCategory}/>
+      <FoodDisplay id="app-download" category={category}/>
+      <AppDownload id="footer"/>
     </div>
   )
 }
