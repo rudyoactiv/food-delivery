@@ -7,7 +7,7 @@ import { assets } from "../../assets/assets";
 
 const ProductPage = () => {
   const { id } = useParams();
-  const { food_list, cartItems, addToCart, removeFromCart } =
+  const { food_list, cartItems, addToCart, removeFromCart, url } =
     useContext(StoreContext);
   const [product, setProduct] = useState(null);
 
@@ -24,7 +24,7 @@ const ProductPage = () => {
           <div className="product-item-img-container">
             <img
               className="product-item-image"
-              src={product.image}
+              src={`${url}/images/${product.image}`}
               alt={product.name}
             />
           </div>
