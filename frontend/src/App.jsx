@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 import ProductPage from "./pages/ProductPage/ProductPage";
+import StoreContextProvider from "./context/storeContext";
 
 const App = () => {
 
