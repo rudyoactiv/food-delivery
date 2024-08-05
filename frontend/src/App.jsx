@@ -10,6 +10,7 @@ import LoginPopup from "./components/LoginPopup/LoginPopup";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import StoreContextProvider from "./context/storeContext";
 import Verify from "./pages/Verify/Verify";
+import MyOrders from "./pages/MyOrders/MyOrders";
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/order" element={<PlaceOrder />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/verify" element={<Verify />} />
+          <Route path="/myorders" element={<MyOrders />} />
         </Routes>
         <ScrollToTopButton />
       </div>
