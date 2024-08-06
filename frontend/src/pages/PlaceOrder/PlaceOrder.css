@@ -38,3 +38,23 @@
 .place-order .cart-total button {
     margin-top: 30px;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 700px) {
+    .place-order {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .place-order-left .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .place-order .cart-total button {
+        margin-top: 20px;
+        align-self: center;
+    }
+}
