@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./List.css";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const List = ({url}) => {
   
