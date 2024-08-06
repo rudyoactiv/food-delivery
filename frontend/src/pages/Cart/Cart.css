@@ -100,4 +100,7 @@
     .cart-promocode {
         justify-content: start;
     }
+    .cart-items-item img {
+        width: 80%;
+    }
 }
