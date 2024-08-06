@@ -1,4 +1,3 @@
-import { log } from "three/examples/jsm/nodes/Nodes.js";
 import userModel from "../models/userModel.js"
 
 // add items to user cart
