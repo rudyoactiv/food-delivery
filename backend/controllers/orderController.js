@@ -7,8 +7,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Placing user order from frontend
 const placeOrder = async (req, res) => {
-  //const frontend_url = "https://ecom-frontend-hc4w.onrender.com";
-  const frontend_url = "https://kraft3d.netlify.app";
+  const frontend_url = "https://ecom-frontend-hc4w.onrender.com";
+  //const frontend_url = "https://kraft3d.netlify.app";
 
   try {
     const newOrder = new orderModel({
