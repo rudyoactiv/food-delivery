@@ -48,5 +48,5 @@ app.listen(port, () => {
         } catch (error) {
             console.error('Error pinging self:', error.message);
         }
-    }, 14 * 60 * 1000); // 14 minutes    
+    }, 1 * 60 * 1000); // 14 minutes    
 })
